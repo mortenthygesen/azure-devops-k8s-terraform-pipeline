@@ -18,8 +18,8 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'in28nin-docker-hub'
-        repository: 'in28nin/currency-exchange-devops'
+        containerRegistry: 'karpin-docker-hub'
+        repository: 'karpin/currency-exchange-devops'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
